@@ -17,9 +17,9 @@ interface DAO {
     @Delete
     suspend fun deleteTask(entity: Entity)
 
-    @Query("Delete from Focus_On")
+    @Query("Delete from Task")
     suspend fun deleteAll()
 
-    @Query("Select * from Focus_On")
+    @Query("Select * from Task")
     suspend fun getTask():List<CardInfo>
 }

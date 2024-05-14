@@ -17,7 +17,7 @@ class Update : AppCompatActivity() {
         binding= ActivityUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
         database= Room.databaseBuilder(
-            applicationContext, myDatabase::class.java, "Focus_On"
+            applicationContext, myDatabase::class.java, "Task"
         ).build()
         val pos=intent.getIntExtra("id",-1)
         if(pos!=-1){

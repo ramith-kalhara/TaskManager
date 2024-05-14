@@ -16,7 +16,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
         database = Room.databaseBuilder(
-            applicationContext, myDatabase::class.java, "Focus_On"
+            applicationContext, myDatabase::class.java, "Task"
         ).build()
         GlobalScope.launch {
             DataObject.listData= database.dao().getTask() as MutableList<CardInfo>

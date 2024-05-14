@@ -3,7 +3,7 @@ package com.example.taskmanager
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "Focus_On")
+@Entity(tableName = "Task")
 class Entity(
     @PrimaryKey(autoGenerate = true)
     var id:Int,

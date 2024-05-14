@@ -16,7 +16,7 @@ class Create : AppCompatActivity() {
         binding = ActivityCreateBinding.inflate(layoutInflater)
         setContentView(binding.root)
         database=Room.databaseBuilder(
-            applicationContext,myDatabase::class.java,"Focus_On"
+            applicationContext,myDatabase::class.java,"Task"
         ).build()
         binding.saveButton.setOnClickListener{
             var title=binding.createTitle.text.toString()

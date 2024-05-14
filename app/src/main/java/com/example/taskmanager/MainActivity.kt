@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         database=Room.databaseBuilder(
-            applicationContext,myDatabase::class.java,"Focus_On"
+            applicationContext,myDatabase::class.java,"Task"
         ).build()
         binding.add.setOnClickListener{
             val intent=Intent(this,Create::class.java)
